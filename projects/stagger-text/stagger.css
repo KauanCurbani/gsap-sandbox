@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121212;
+  height: 100vh;
+  font-size: 8vmin;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.divider {
+  width: 50%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 12px 0;
+}

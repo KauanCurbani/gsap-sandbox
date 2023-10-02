@@ -1,0 +1,44 @@
+:root {
+  --grid-col: 8;
+  --grid-row: 8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121212;
+  height: 100vh;
+  font-size: 8vmin;
+  flex-direction: column;
+  overflow: hidden;
+}
+.grid {
+    z-index: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-col), 1fr);
+  grid-template-rows: repeat(var(--grid-row), 1fr);
+}
+.block {
+  display: flex;
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.blur {
+    z-index: 1;
+  width: 100%;
+  position: absolute;
+  -webkit-backdrop-filter: blur(100px);
+  /* height: 100vh;backdrop-filter: blur(100px); */
+}

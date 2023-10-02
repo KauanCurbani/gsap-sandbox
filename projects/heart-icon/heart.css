@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+  font-size: 8vmin;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  height: 24px;
+  z-index: 2;
+}
+.liked {
+  fill: #ff0044;
+}
+.not-liked {
+  fill: #ff0044;
+  position: absolute;
+}
+
+.particle {
+  width: 3px;
+  height: 3px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #ff0044;
+  position: absolute;
+}
+
+.circle {
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid #ff0044;
+  aspect-ratio: 1;
+}
+
+.button {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.15);
+  transition: all .3s ease;
+}
+
+.button:hover{
+    transform: translateY(-2%);
+}
